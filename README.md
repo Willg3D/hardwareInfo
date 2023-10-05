@@ -12,7 +12,7 @@ Python Terminal Tool to display system hardware information such as CPU clock, R
 
 Hardware Info Inspector relies on the following Python packages:
 
-- **curses:** This package provides a terminal-independent way to handle character-based I/O.
+- **TODO**
 
 ## Usage
 - **TODO**
