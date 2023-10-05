@@ -1,3 +1,18 @@
-# hardwareInfo
+# 	Hardware Info Inspector
 Python Terminal Tool to display system hardware information such as CPU clock, RAM usage, and GPU clock
-Planned Compatibility: Windows, MacOS, and Linux
+
+## Features
+- Easily launch and displays computer hardware information in a terminal.
+-  Planned Compatibility: Windows, MacOS, and Linux
+
+## Requirements
+- **TODO**
+
+## Required Python Packages
+
+Hardware Info Inspector relies on the following Python packages:
+
+- **curses:** This package provides a terminal-independent way to handle character-based I/O.
+
+## Usage
+- **TODO**
