@@ -32,10 +32,9 @@ def win_cpu_freq():
 # CPU frequencies (Mac)
 def get_cpu_freq():
     result = subprocess.check_output(["sysctl", "-n", "machdep.cpu.brand_string"]).decode('utf-8')
-    newResult = result.strip()
     macinfo = (
         f"CPU Info: {get_cpu_freq()}"
-        f"{newResult}"
+        f"{result.strip()}"
     )
     return macinfo
 # CPU percent usage
