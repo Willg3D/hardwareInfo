@@ -1,3 +1,26 @@
+"""
+Display a list of strings in a text box format.
+
+Args:
+array of strings # can be empty array
+
+Tests (empty, single line, mutiple lines)
+>>> empty_strings = []
+>>> terminalDisplay(empty_strings)  # No output as there are no strings to display
+
+>>> single_string = ["Single Line"]
+>>> terminalDisplay(single_string)
+╔═════════════╗
+║ Single Line ║
+╚═════════════╝
+
+>>> strings = ["Hello", "World!"]
+>>> terminalDisplay(strings)
+╔════════╗
+║ Hello  ║
+║ World! ║
+╚════════╝
+"""
 def terminalDisplay(displayStrings = None):
     if not displayStrings:
         return
@@ -12,11 +35,7 @@ def terminalDisplay(displayStrings = None):
         print(formattedString)
     print('╚' + rowLine + '╝')
 
-"""
 
-testTextArray = ["System Hardware Information",
-                  "CPU Model: Intel Something", "CPU Core: 1000"]
-
-terminalDisplay(testTextArray)
-
-"""
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
