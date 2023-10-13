@@ -35,6 +35,10 @@ ramButton.pack()
 ramLabel = Label(gui, text="", justify=LEFT)
 ramLabel.pack()
 
+def macTest():
+    print("Button works")
 
+testButton = Button(gui, text="Mac Test", command=macTest)
+testButton.pack()
 
 gui.mainloop()
