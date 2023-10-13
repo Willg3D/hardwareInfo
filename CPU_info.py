@@ -5,8 +5,8 @@ hardware = platform.system()
 
 
 # Number of logical and physical cores
-print(f"Logical cores: {psutil.cpu_count(logical=True)}")
-print(f"Physical cores: {psutil.cpu_count(logical=False)}")
+#print(f"Logical cores: {psutil.cpu_count(logical=True)}")
+#print(f"Physical cores: {psutil.cpu_count(logical=False)}")
 
 
 # CPU frequencies (Windows / Linux)
@@ -39,11 +39,11 @@ def get_cpu_freq():
     )
     return macinfo
 # CPU percent usage
-print(f"CPU usage (per core): {psutil.cpu_percent(interval=1, percpu=True)}%")
+'''print(f"CPU usage (per core): {psutil.cpu_percent(interval=1, percpu=True)}%")
 print(f"Total CPU usage: {psutil.cpu_percent(interval=1)}%")
 
 # CPU times
 cpu_times = psutil.cpu_times()
 print(f"User time: {cpu_times.user}s")
 print(f"System time: {cpu_times.system}s")
-print(f"Idle time: {cpu_times.idle}s")
+print(f"Idle time: {cpu_times.idle}s")'''
