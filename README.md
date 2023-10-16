@@ -3,16 +3,17 @@ Python Terminal Tool to display system hardware information such as CPU clock, R
 
 ## Features
 - Easily launch and displays computer hardware information in a terminal.
--  Planned Compatibility: Windows, MacOS, and Linux
+- Compatible: Windows (with Nvidia Graphics)
+- May work with: MacOS and Linux
 
-## Requirements
-- **TODO**
 
 ## Required Python Packages
 
 Hardware Info Inspector relies on the following Python packages:
 
-- **TODO**
+- **psutil**: Used to get CPU, RAM, virtual space, and network information.
+- **gputil**: Used to get Nvidia GPU information.
+- **tkinter**: Used to create a basic gui
 
 ## Usage
-- **TODO**
+- To compile code all additional python packages from the **Required Python Packages** section must be install. gui.py will act as the main.
