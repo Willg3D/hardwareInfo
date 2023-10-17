@@ -26,6 +26,3 @@ def get_motherboard_info():
 
     except Exception as e:
         return str(e)
-
-if __name__ == "__main__":
-    print(get_motherboard_info())

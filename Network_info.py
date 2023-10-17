@@ -14,8 +14,11 @@ nets = psutil.net_if_stats()
 ipInfo = pprint(nets)
 
 # displaying the information 
-netInfo = (
-    f"{devices}\n"
-    f"{ipInfo}\n"
-)
+
+def get_net_info():
+    netInfo = (
+        f"{devices}\n"
+        f"{ipInfo}\n"
+    )
+    return netInfo
 

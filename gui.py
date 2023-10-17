@@ -1,12 +1,24 @@
-from tkinter import *
+import tkinter as tk
+from tkinter import font
 from CPU_info import win_cpu_freq, get_cpu_freq # Import functions from cpu_info module
 from RAM_info import get_ram_info #Import functions from RAM_info module
+from GPU_info import get_gpu_info
+from Network_info import get_net_info
+from Motherboard_info import get_motherboard_info
 import platform
 
-gui = Tk()
-gui.geometry("360x480")
+gui = tk.Tk()
+gui.geometry("360x600")
+
+
+
+cst_font = font.Font(family ="Helvetica", size=7)
 
 sys = platform.system()
+
+
+
+
 
 
 def showCPU():
@@ -16,29 +28,50 @@ def showCPU():
         cpu_info = get_cpu_freq()
     cpuLabel.config(text=cpu_info)
 
-
-
 def showRam():
     ram_info = get_ram_info()
     ramLabel.config(text=ram_info)
 
+def showGPU():
+    gpu_info = get_gpu_info()
+    gpuLabel.config(text=gpu_info)
 
-menu = StringVar()
+def showMOBO():
+    MOBO_info = get_motherboard_info()
+    MOBOLabel.config(text=MOBO_info)
 
-cpuButton = Button(gui, text="CPU_Info", command=showCPU)
+def showNet():
+    net_info = get_net_info()
+    netLabel.config(text=net_info)
+
+
+menu = tk.StringVar()
+
+cpuButton = tk.Button(gui, text="CPU Info", command=showCPU)
 cpuButton.pack()
-cpuLabel = Label(gui, text="", justify=LEFT)
+cpuLabel = tk.Label(gui, text="", justify=tk.CENTER)
 cpuLabel.pack()
 
-ramButton = Button(gui, text="RAM_Info", command = showRam)
+ramButton = tk.Button(gui, text="RAM Info", command = showRam)
 ramButton.pack()
-ramLabel = Label(gui, text="", justify=LEFT)
+ramLabel = tk.Label(gui, text="", justify=tk.LEFT)
 ramLabel.pack()
 
-def macTest():
-    print("Button works")
+tk.Label(gui, text="Only use this button if NVIDIA Graphics Card Installed\n (Otherwise no Info will be Displayed)",justify=tk.CENTER).pack()
 
-testButton = Button(gui, text="Mac Test", command=macTest)
-testButton.pack()
+gpuButton = tk.Button(gui, text="GPU Info", command=showGPU)
+gpuButton.pack()
+gpuLabel = tk.Label(gui, text="", justify=tk.CENTER)
+gpuLabel.pack()
+
+MOBOButton = tk.Button(gui, text="Motherboard Info", command=showMOBO)
+MOBOButton.pack()
+MOBOLabel = tk.Label(gui, text="", justify=tk.CENTER, font=cst_font)
+MOBOLabel.pack()
+
+netButton = tk.Button(gui, text="Network Info", command=showNet)
+netButton.pack()
+netLabel = tk.Label(gui, text="", justify=tk.CENTER)
+netLabel.pack()
 
 gui.mainloop()
