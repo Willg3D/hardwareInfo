@@ -1,5 +1,5 @@
 # Hardware Info Inspector Documentation
-
+![Application Appearance](images\HardwareInfoInspector.png)
 ## Table of Contents
 
 1. [Introduction](#1-introduction)
@@ -35,6 +35,8 @@ To use Hardware Info Inspector, follow these steps:
 2. Run the executable.
 
 3. Click on User Interface Buttons
+
+![Expanded Buttons](images\HardwareInfoAllExpanded.png)
 
 ## 4. User Interface
 
