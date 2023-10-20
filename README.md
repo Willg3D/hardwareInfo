@@ -1,5 +1,8 @@
 # Hardware Info Inspector Documentation
-![Application Appearance](images\HardwareInfoInspector.png)
+<div align="center">
+  <img src="./images/HardwareInfoInspector.png" alt="Application Appearance" width="40%" height="40%">
+</div>
+
 ## Table of Contents
 
 1. [Introduction](#1-introduction)
@@ -36,7 +39,9 @@ To use Hardware Info Inspector, follow these steps:
 
 3. Click on User Interface Buttons
 
-![Expanded Buttons](images\HardwareInfoAllExpanded.png)
+<div align="center">
+  <img src="./images/HardwareInfoAllExpanded.png" alt="Expanded Buttons" width="50%" height="50%">
+</div>
 
 ## 4. User Interface
 
@@ -107,8 +112,7 @@ Hardware Info Inspector relies on the following Python packages:
 - **psutil**: Used to get CPU, RAM, virtual space, and network information.
 - **gputil**: Used to get Nvidia GPU information.
 - **tkinter**: Used to create a basic gui
-
--**pyinstaller**: Only needed to create an executable
+- **pyinstaller (Not Needed to Run)**: Only needed to create an executable
 
 ## Compiling
 - To compile code all additional python packages from the **Required Python Packages** section must be installed. To create an executable use **pyinstaller**, where gui.py will act as the main, otherwise just run gui.py.
