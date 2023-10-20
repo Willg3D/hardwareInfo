@@ -7,7 +7,7 @@
 
 1. [Introduction](#1-introduction)
 2. [System Requirements](#2-system-requirements)
-3. [Using](#3-using)
+3. [Running](#3-running)
 4. [User Interface](#4-user-interface)
 5. [Using Hardware Info Inspector](#5-using-hardware-info-inspector)
    - [CPU Information](#51-cpu-information)
@@ -29,7 +29,7 @@ To run Hardware Info Inspector, your computer must meet the following system req
 - **Operating System**: Windows
 - **GPU**: Nvidia Graphics (if not in system, then GPU info section will not work)
 
-## 3. Using
+## 3. Running
 
 To use Hardware Info Inspector, follow these steps:
 
